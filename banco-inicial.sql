@@ -1,4 +1,4 @@
-CREATE DATABASE alura;
+CREATE DATABASE meubanco;
 
 CREATE TABLE aluno (
     id SERIAL PRIMARY KEY,
