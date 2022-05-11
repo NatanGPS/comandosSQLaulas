@@ -24,7 +24,7 @@ CREATE TABLE aluno_curso (
 	PRIMARY KEY (aluno_id, curso_id)
 );
 
--- aula 02 
+-- aula 02 treino
 CREATE TABLE categoria (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
