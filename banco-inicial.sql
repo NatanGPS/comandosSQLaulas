@@ -24,3 +24,14 @@ CREATE TABLE aluno_curso (
 	PRIMARY KEY (aluno_id, curso_id)
 );
 
+-- aula 02 
+CREATE TABLE categoria (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE curso(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+    categoria_id INTEGER NOT NULL REFERENCES categoria(id)
+);
