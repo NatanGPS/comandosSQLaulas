@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+CREATE DATABASE meubanco;
+
+>>>>>>> 320ee70a14482412011d5535c0426ef8ea257384
 CREATE TABLE aluno (
     id SERIAL PRIMARY KEY,
 	primeiro_nome VARCHAR(255) NOT NULL,
@@ -31,6 +36,7 @@ INSERT INTO aluno (primeiro_nome, ultimo_nome, data_nascimento) VALUES (
     'Maria', 'Rosa', '1985-01-01'
 );
 
+<<<<<<< HEAD
 
 INSERT INTO categoria (nome) VALUES ('Front-End'), ('Programação'), ('Banco de dados'), ('Data Science');
 
@@ -96,3 +102,10 @@ ORDER BY numero_cursos DESC;
   
   
   
+=======
+CREATE TABLE curso(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+    categoria_id INTEGER NOT NULL REFERENCES categoria(id)
+);
+>>>>>>> 320ee70a14482412011d5535c0426ef8ea257384
